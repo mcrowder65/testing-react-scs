@@ -29,8 +29,8 @@
     "build": "react-scripts build",
     "jest": "CI=true react-scripts test --silent --coverage",
     "jest:watch": "react-scripts test",
-    "linter": "eslint src --ext .js",
-    "test": "CI=true yarn linter && yarn jest",
+    "lint": "eslint src --ext .js",
+    "test": "CI=true yarn lint && yarn jest",
     "eject": "react-scripts eject",
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
   },
