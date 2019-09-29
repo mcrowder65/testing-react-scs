@@ -12,7 +12,7 @@ In this talk, I will first introduce react-testing-library, what it is, what it 
 
 ---
 
-This was a talk given at <a href="https://sceniccitysummit.com/">Scenic City Summit</a> on September 21, 2019.
+This was a talk given at <a href="https://sceniccitysummit.com/">Scenic City Summit</a> on October 4, 2019.
 
 Slides/website are available are <a href="https://testingreactscs.netlify.com">available here</a>
 
