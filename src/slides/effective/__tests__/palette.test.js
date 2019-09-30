@@ -1,19 +1,17 @@
 import React from "react";
 import { fireEvent } from "@testing-library/react";
-import RealWorldExample from "src/slides/effective/real-world-example";
+import Palette from "src/slides/effective/palette";
 import { theme } from "../../../reusable/theme";
 import { render } from "../../../../test/utils";
 
 test("that it renders", () => {
-  render(<RealWorldExample />);
+  render(<Palette />);
 });
 
 test(`WHEN updating to a new primary color
 THEN the button changes to the new primary color
 AND WHEN rerendering the component the new primary color stays`, () => {
-  const { getByLabelText, getByTitle, rerender, unmount } = render(
-    <RealWorldExample />
-  );
+  const { getByLabelText, getByTitle, rerender, unmount } = render(<Palette />);
 
   const getButton = () => getByLabelText("update primary color");
 
@@ -29,7 +27,7 @@ AND WHEN rerendering the component the new primary color stays`, () => {
 
   // simulate a page refresh
   unmount();
-  rerender(<RealWorldExample />);
+  rerender(<Palette />);
 
   expect(getButton()).toHaveStyle(`background-color: ${newColor}`);
 });

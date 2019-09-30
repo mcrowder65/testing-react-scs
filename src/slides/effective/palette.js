@@ -8,7 +8,7 @@ import { updateThemeColor } from "../../redux/actions";
 import { Button } from "../../reusable/button";
 import { Text } from "../../reusable/text";
 
-const RealWorldExample = props => {
+const Palette = props => {
   const [swatchColor, setSwatchColor] = React.useState(props.primaryColor);
   return (
     <Container>
@@ -59,4 +59,4 @@ const mapDispatchToProps = {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(RealWorldExample);
+)(Palette);

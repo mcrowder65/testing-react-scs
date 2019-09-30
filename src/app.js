@@ -8,7 +8,8 @@ import Encourage from "./slides/encourage";
 import Wrong from "./slides/wrong/wrong";
 import Effective from "./slides/effective/effective";
 import Contrived from "./slides/effective/contrived";
-import RealWorldExample from "./slides/effective/real-world-example";
+import Palette from "./slides/effective/palette";
+import Palette2 from "./slides/wrong/palette";
 import TestOfTime from "./slides/test-of-time";
 import Queries from "./slides/apis/queries";
 import FiringEvents from "./slides/apis/firing-events";
@@ -33,7 +34,19 @@ const routes = [
   {
     path: "/wrong-tests",
     name: "The wrong way to write tests",
-    component: Wrong
+    component: Wrong,
+    subcomponents: [
+      {
+        path: "/switch",
+        component: Wrong,
+        name: "Switch"
+      },
+      {
+        path: "/palette",
+        component: Palette2,
+        name: "Color Palette"
+      }
+    ]
   },
   {
     path: "/what",
@@ -74,7 +87,7 @@ const routes = [
     subcomponents: [
       { path: "/index", name: "Effective", component: Effective },
       { path: "/contrived", name: "Contrived", component: Contrived },
-      { path: "/real-world", name: "Real World", component: RealWorldExample }
+      { path: "/real-world", name: "Real World", component: Palette }
     ]
   },
 
