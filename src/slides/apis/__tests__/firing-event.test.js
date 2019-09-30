@@ -1,6 +1,6 @@
 import React from "react";
-import { render } from "test/utils";
-import FiringEvents from "src/slides/apis/firing-events";
+import FiringEvents from "../firing-events";
+import { render } from "../../../../test/utils";
 
 test("that it renders", () => {
   render(<FiringEvents />);

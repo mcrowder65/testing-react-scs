@@ -1,6 +1,6 @@
 import React from "react";
-import { render } from "test/utils";
-import What from "src/slides/what";
+import What from "../what";
+import { render } from "../../../test/utils";
 
 test("that it renders", () => {
   render(<What />);

@@ -1,6 +1,7 @@
 import React from "react";
-import { render } from "test/utils";
-import Effective from "src/slides/effective/effective";
+import { render } from "../../../../test/utils";
+
+import Effective from "../effective";
 import Contrived from "../contrived";
 
 test("that it renders", () => {

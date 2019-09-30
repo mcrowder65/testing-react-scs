@@ -1,6 +1,6 @@
 import React from "react";
 import { fireEvent } from "@testing-library/react";
-import Palette from "src/slides/effective/palette";
+import Palette from "../palette";
 import { theme } from "../../../reusable/theme";
 import { render } from "../../../../test/utils";
 

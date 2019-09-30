@@ -1,7 +1,7 @@
 import React from "react";
 import "babel-polyfill";
-import AboutMe from "src/slides/about-me";
-// import Agenda from "src/slides/agenda";
+import AboutMe from "./slides/about-me";
+// import Agenda from "./slides/agenda";
 import What from "./slides/what";
 import Encourage from "./slides/encourage";
 // import Best from "./slides/best";
@@ -22,6 +22,7 @@ import Providers from "./providers";
 import Outline from "./reusable/outline/outline";
 import { createPersistedStore } from "./redux/create-store";
 import HowIUsedToWriteTests from "./slides/how-i-used-to-write-tests";
+import Siths from "./slides/siths/siths";
 
 const routes = [
   { path: "/about-me", name: "About me", component: AboutMe },
@@ -90,7 +91,11 @@ const routes = [
       { path: "/real-world", name: "Real World", component: Palette }
     ]
   },
-
+  {
+    path: "/siths",
+    name: "Only siths deal in absolutes",
+    component: Siths
+  },
   {
     path: "/test-of-time",
     name: "Writing tests that stand the test of time",
