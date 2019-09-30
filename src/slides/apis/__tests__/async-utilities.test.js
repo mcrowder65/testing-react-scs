@@ -1,6 +1,6 @@
 import React from "react";
-import { render } from "test/utils";
-import AsyncUtilities from "src/slides/apis/async-utilities";
+import AsyncUtilities from "../async-utilities";
+import { render } from "../../../../test/utils";
 
 test("that it renders", () => {
   render(<AsyncUtilities />);

@@ -1,6 +1,6 @@
 import React from "react";
-import { render } from "test/utils";
-import Agenda from "src/slides/agenda";
+import Agenda from "../agenda";
+import { render } from "../../../test/utils";
 
 test("that it renders", () => {
   render(<Agenda />);

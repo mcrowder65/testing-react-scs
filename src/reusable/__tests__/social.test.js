@@ -1,6 +1,7 @@
 import React from "react";
-import { render } from "test/utils";
-import { Twitter, GitHub } from "src/reusable/social";
+import { render } from "../../../test/utils";
+
+import { Twitter, GitHub } from "../social";
 
 test("that twitter renders", () => {
   render(<Twitter />);

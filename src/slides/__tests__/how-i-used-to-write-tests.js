@@ -1,6 +1,6 @@
 import React from "react";
-import { render } from "test/utils";
-import HowIUsedToWriteTests from "src/slides/how-i-used-to-write-tests";
+import HowIUsedToWriteTests from "../how-i-used-to-write-tests";
+import { render } from "../../../test/utils";
 
 test("that it renders", () => {
   render(<HowIUsedToWriteTests />);
