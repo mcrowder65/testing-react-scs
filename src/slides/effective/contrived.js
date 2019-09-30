@@ -1,8 +1,11 @@
 import React from "react";
 import { Container } from "../../reusable/container";
 import { Text } from "../../reusable/text";
+import Switch from "../wrong/switch";
 
-const Contrived = () => {
+function Contrived() {
+  const [checked, setChecked] = React.useState(false);
+
   return (
     <Container flexDirection="column">
       <Text>
@@ -14,8 +17,14 @@ const Contrived = () => {
           Contrived example
         </a>
       </Text>
+      <Text>Controlled</Text>
+      <Switch checked={checked} toggle={() => setChecked(!checked)} />
+      <Switch checked={checked} toggle={() => setChecked(!checked)} />
+      <Text>Uncontrolled</Text>
+      <Switch />
+      <Switch />
     </Container>
   );
-};
+}
 
 export default Contrived;
