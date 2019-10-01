@@ -24,6 +24,7 @@ class Switch extends React.Component {
       <div className="container">
         <label className="switch">
           <input
+            aria-label="checkbox"
             type="checkbox"
             checked={this.getChecked()}
             onClick={this.toggle}

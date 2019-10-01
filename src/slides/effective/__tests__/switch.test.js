@@ -1,6 +1,6 @@
 import React from "react";
-import Switch from "../../wrong/switch.hook";
 import { fireEvent, render } from "@testing-library/react";
+import Switch from "../switch";
 
 test("that it renders", () => {
   render(<Switch />);

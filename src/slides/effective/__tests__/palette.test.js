@@ -12,7 +12,6 @@ test(`WHEN updating to a new primary color
 THEN the button changes to the new primary color
 AND WHEN rerendering the component the new primary color stays`, () => {
   const { getByLabelText, getByTitle, rerender, unmount } = render(<Palette />);
-
   const getButton = () => getByLabelText("update primary color");
 
   expect(getButton()).toHaveStyle(
