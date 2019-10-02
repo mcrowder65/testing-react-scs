@@ -16,15 +16,29 @@ import FiringEvents from "./slides/apis/firing-events";
 // import AsyncUtilities from "./slides/apis/async-utilities";
 
 import translations from "./translations";
-
 import "./polyfills";
 import Providers from "./providers";
 import Outline from "./reusable/outline/outline";
 import { createPersistedStore } from "./redux/create-store";
 import HowIUsedToWriteTests from "./slides/how-i-used-to-write-tests";
 import Siths from "./slides/siths/siths";
-
+import open from "./open.png";
+import feedback from "./feedback.png";
+import sponsors from "./sponsors.png";
+import { Container } from "./reusable/container";
+const ScsSlide = ({ src, alt, height = 1080 * 0.7, width = 1920 * 0.7 }) => (
+  <Container>
+    <img src={src} width={width} height={height} alt={alt} />
+  </Container>
+);
 const routes = [
+  {
+    path: "/opening",
+    name: "Opening",
+    component: () => (
+      <ScsSlide src={open} alt="opening slide about scenic city summit" />
+    )
+  },
   { path: "/about-me", name: "About me", component: AboutMe },
   {
     path: "/how-i-used-to-write-tests",
@@ -100,6 +114,18 @@ const routes = [
     path: "/test-of-time",
     name: "Writing tests that stand the test of time",
     component: TestOfTime
+  },
+  {
+    path: "/sponsors",
+    name: "Sponsors",
+    component: () => <ScsSlide src={sponsors} alt="Slide about sponsors" />
+  },
+  {
+    path: "/feedback",
+    name: "Feedback",
+    component: () => (
+      <ScsSlide src={feedback} alt="closing slide to provide feedback" />
+    )
   }
 ];
 const locale = "en";
